@@ -1,3 +1,27 @@
 
 A
 public/index.html,f/4/f43ecdf8d666ee908aacce037b4cd72159e4741b
+D
+public/donation.html,9/3/93cdb98de3c87b0a122a6c3226aa60d44da249d1
+C
+public/gallery.html,4/9/49cbbdbab8193bfb7e07aedbd1b1dc403fc3b3ff
+C
+public/contact.html,a/8/a83cffbd7bc5808b7ad2921e4fa69bbf710a771c
+B
+public/causes.html,6/4/64d2679f2c119dc404ddf300d98b267379ddf1b1
+E
+public/volunteer.html,f/9/f9609cf412b1c5a23aceaa26e1e6d0e8f80b9596
+B
+public/events.html,2/f/2fd40650f18fdc9b1e23de923bffebabb2b9124d
+@
+public/blog.html,c/1/c1701fedea371639a94939cd0409fdb761e71e46
+A
+public/about.html,3/e/3e3afa0ca882b6f85a129275b6ff695ec5d1bf45
+C
+public/service.html,e/0/e0003ced902523afc0dc7ad2987f36e4d40d4fca
+?
+public/404.html,9/1/9165de4c08ed7f75a6e91e356e892f20aa817eb8
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
