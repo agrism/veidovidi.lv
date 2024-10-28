@@ -1,0 +1,17 @@
+{
+    "name": "agrismarkus/veidovidi.lv",
+    "autoload": {
+        "psr-4": {
+            "Agrismarkus\\VeidovidiLv\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Agris",
+            "email": "7924@inbox.lv"
+        }
+    ],
+    "require": {
+        "clue/framework-x": "^0.16"
+    }
+}
