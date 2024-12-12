@@ -2,18 +2,24 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$app = new FrameworkX\App();
+use FrameworkX\App;
+use Laminas\Diactoros\Response\HtmlResponse;
+use Psr\Http\Message\ServerRequestInterface;
+use Twig\Environment;
+use Twig\Loader\FilesystemLoader;
 
-$app->get('/', function () {
-    return React\Http\Message\Response::plaintext(
-        "Hello wörld!\n"
-    );
-});
+// Set up the Twig template loader
+$loader = new FilesystemLoader(__DIR__ . '/../templates');
+$twig = new Environment($loader);
 
-$app->get('/users/{name}', function (Psr\Http\Message\ServerRequestInterface $request) {
-    return React\Http\Message\Response::plaintext(
-        "Hello " . $request->getAttribute('name') . "!\n"
-    );
+$app = new App();
+
+$app->get('/', function (ServerRequestInterface $request) use ($twig) {
+    // Render the HTML from Twig
+    $html = $twig->render('index.html.twig', ['name' => 'World']);
+
+    // Return an HTML response containing the rendered HTML
+    return new HtmlResponse($html);
 });
 
 $app->run();

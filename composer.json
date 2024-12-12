@@ -12,6 +12,8 @@
         }
     ],
     "require": {
-        "clue/framework-x": "^0.16"
+        "clue/framework-x": "^0.16",
+        "twig/twig": "^3.14",
+        "laminas/laminas-diactoros": "^3.5"
     }
 }
