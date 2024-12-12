@@ -16,7 +16,15 @@ $app = new App();
 
 $app->get('/', function (ServerRequestInterface $request) use ($twig) {
     // Render the HTML from Twig
-    $html = $twig->render('index.html.twig', ['name' => 'World']);
+    $html = $twig->render('index.html.twig', []);
+
+    // Return an HTML response containing the rendered HTML
+    return new HtmlResponse($html);
+});
+
+$app->post('/login', function (ServerRequestInterface $request) use ($twig) {
+    // Render the HTML from Twig
+    $html = $twig->render('index.html.twig', []);
 
     // Return an HTML response containing the rendered HTML
     return new HtmlResponse($html);
